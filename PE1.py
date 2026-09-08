@@ -3,7 +3,7 @@ MAX_TICKETS = 10
 
 def get_ticket_purchase(remaining):
     while True:
-        tickets = int(input(f"How many tickets would you like to buy? (1-4): "))
+        tickets = int(input(f"How many tickets do you want to purchase? (1-4): "))
 
         if tickets >= 1 and tickets <= 4 and tickets <= remaining:
             return tickets
