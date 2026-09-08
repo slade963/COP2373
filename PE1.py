@@ -13,19 +13,19 @@ def get_ticket_purchase(remaining):
 
 def sell_tickets():
     remaining = MAX_TICKETS
-    buyers = 0
+    total_buyers = 0
 
     while remaining > 0:
         tickets = get_ticket_purchase(remaining)
 
         remaining = remaining - tickets
-        buyers = buyers + 1
+        total_buyers = total_buyers + 1
 
         print("Purchase complete!")
         print("Tickets remaining:", remaining)
 
     print("All tickets have been sold!")
-    print("Total number of buyers:", buyers)
+    print("Total number of buyers:", total_buyers)
 
 
 sell_tickets()
