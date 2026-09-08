@@ -1,4 +1,4 @@
-MAX_TICKETS = 20
+MAX_TICKETS = 10
 
 
 def get_ticket_purchase(remaining):
